@@ -1,5 +1,5 @@
 const { getShowerThoughts, postThought, deletePost } = require('./services');
-const { userId, DELAY } = require('./config');
+const { userId, DELAY, whenDelete } = require('./config');
 
 function slowlyDelete(toDelete) {
   let i = 0;
@@ -29,7 +29,7 @@ function bot(thoughts) {
           toDelete.push(thought);
           i++;
         });
-      if (toDelete.length > 2) {
+      if (toDelete.length > whenDelete) {
         slowlyDelete(toDelete);
         toDelete = [];
       }
