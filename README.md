@@ -1,6 +1,8 @@
 
 # ThoughtBot
 
+[![CodeFactor](https://www.codefactor.io/repository/github/dannydi12/thoughtbin-bot/badge)](https://www.codefactor.io/repository/github/dannydi12/thoughtbin-bot)
+
 ThoughtBin allows users to anonymously share and create content on a simple and frictionless micro-platform. Think of it as a privacy-centric Twitter with a hint of 4Chan. A live demo can be found at [https://thoughtbin.imdan.io/](https://thoughtbin.imdan.io/)
 
 ## Why a bot?
