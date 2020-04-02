@@ -1,3 +1,11 @@
+/**
+ * This is the config file. That's all I can really say here.
+ *
+ * @author Daniel DiVenere
+ * @since  4/1/20
+ */
+
+
 require('dotenv').config();
 
 module.exports = {

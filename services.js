@@ -1,6 +1,17 @@
+/**
+ * Where all the fetch requests live. Welcome home :)
+ *
+ * @author Daniel DiVenere
+ * @since  4/1/20
+ */
+
+
 const axios = require('axios');
 const { TOKEN, URL } = require('./config');
 
+/**
+ * Gets the shower thoughts from r/ShowerThoughts.
+ */
 async function getShowerThoughts() {
   const response = await axios.get('https://www.reddit.com/r/showerthoughts/top.json', {
     params: {
@@ -17,6 +28,11 @@ async function getShowerThoughts() {
   return thoughts;
 }
 
+/**
+ * This will post to ThoughtBin no matter how much you beg it not too.
+ *
+ * @param {Object} newThought To post to ThoughtBin.
+ */
 async function postThought(newThought) {
   const response = await axios({
     method: 'POST',
@@ -34,6 +50,11 @@ async function postThought(newThought) {
   return response.data;
 }
 
+/**
+ * This function makes it look like ThoughtBot never existed :O
+ *
+ * @param {number} id ID of thought to delete.
+ */
 async function deletePost(id) {
   await axios({
     method: 'DELETE',
