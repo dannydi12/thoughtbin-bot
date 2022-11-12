@@ -12,6 +12,6 @@ module.exports = {
   TOKEN: process.env.TOKEN,
   userId: process.env.USERID,
   URL: process.env.URL,
-  DELAY: 1000 * 30,
+  DELAY: 1000,
   whenDelete: 50,
 };
